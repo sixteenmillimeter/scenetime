@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>scenetime</title>
+		<link href="/html/css/codemirror.css" rel="stylesheet" />
+		<link href="/html/css/show-hint.css" rel="stylesheet" />
+		<link href="/html/css/app.css" rel="stylesheet" />
+	</head>
+	<body>
+		<header id="header">
+			<button id="save" onclick="editor.save();" class="editor_page">Save</button>
+			<button id="download" onclick="render.pdf();" class="render_page">PDF</button>
+			<span class="text">Editor</span>
+			<button id="menu" onclick="app.toggle();">
+				<div class="icon editor_page"></div>
+				<div class="icon render_page"></div>
+			</button>
+		</header>
+		<textarea id="editor">Title:
+	_**YOUR SCREENPLAY**_
+	_**WITH SUBTITLE**_
+Credit: Written by
+Author: Me
+Source: fountain.io/howto
+Draft date: 12/31/1969
+Contact:
+	Hollywood Productions
+	123 Fake St.
+	Beverly Hills, CA 90210
+
+INT. YOUR PLACE - NIGHT
+
+YOU
+(whispering)
+I can workshop ideas and download .fountain files or pdfs!
+
+CUT TO:
+
+EXT. LOCAL PARK - DAY
+
+YOU are sitting on a bench, playing with your phone.
+
+YOU
+Wow, this even works on mobile!
+
+> _**THE END**_ <
+		</textarea>
+		<div id="view_wrapper" class="render_page">
+			<div id="view_scale">
+				<div id="view" class="us-letter dpi72">
+				</div>
+			</div>
+		</div>
+		<footer>
+		by <a href="https://mmcwilliams.com" target="_blank">mmcwilliams</a> | based on <a href="https://github.com/mattdaly/Fountain.js" target="_blank">Fountain.js</a>
+		</footer>
+		<script src="/html/js/codemirror-compressed.js"></script>
+		<script src="/html/js/show-hint.js"></script>
+		<script src="/html/js/app-min.js"></script>
+		<!--<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+			ga('create', '{{GA_ID}}', 'auto');
+			ga('send', 'pageview');
+		</script>-->
+	</body>
+</html>

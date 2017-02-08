@@ -1,0 +1,37 @@
+{
+  "name": "scenetime",
+  "version": "0.0.1",
+  "description": "App for writing screenplays and exporting them to PDF",
+  "main": "index.js",
+  "engines": {
+    "node": "6.x"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "fountain",
+    "codemirror"
+  ],
+  "author": "m mcwilliams",
+  "license": "MIT",
+    "jshintConfig": {
+    "esversion": 6,
+    "strict": "global",
+    "node": true,
+    "asi": true
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-clean-css": "^2.0.3",
+    "gulp-concat": "^2.6.0",
+    "gulp-less": "^3.0.3",
+    "gulp-minify": "0.0.5",
+    "gulp-watch": "^4.3.5",
+    "q": "^1.4.1"
+  },
+  "dependencies": {
+    "handlebars": "^4.0.6",
+    "restify": "^4.3.0"
+  }
+}
