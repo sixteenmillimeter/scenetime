@@ -18,7 +18,7 @@ gulp.task('scripts', function() {
 		'./lib/index.js'
 	];
   return gulp.src(src)
-    .pipe(concat({ path: './html/js/app.js', stat: { mode: 0755 }}))
+    .pipe(concat({ path: './js/app.js', stat: { mode: 0755 }}))
     .pipe(minify({
     	preserveComments : true
     }))
@@ -26,10 +26,10 @@ gulp.task('scripts', function() {
 });
 
 gulp.task('less', function () {
-  return gulp.src('./lib/*.less')
+  return gulp.src('./less/*.less')
     .pipe(less({
       paths: [ path.join(__dirname, 'less') ]
     }))
     .pipe(cleanCSS())
-    .pipe(gulp.dest('./html/css/'));
+    .pipe(gulp.dest('./css/'));
 });
