@@ -2382,6 +2382,7 @@ editor.init = function () {
 	editor.elem = $('#editor')[0];
 	editor.cm = CodeMirror.fromTextArea(editor.elem, {
 		lineNumbers : true,
+		lineWrapping : true,
 		extraKeys : {
         	'Tab' : 'autocomplete'
     	},
